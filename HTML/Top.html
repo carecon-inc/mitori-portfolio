@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
     <meta charset="UTF-8">
-    <title>見鳥友香のポートフォリオ</title>
+    <title>見鳥友香のポートフォリオ_Top画面</title>
     <meta name="description" content="careconデザイナーの制作実績">
-    <link rel="stylesheet" href="CSS/study1.css">
-    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/Top.css">
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
     <meta name="vieport" content="width=device-width,initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@600&family=Zen+Kaku+Gothic+New:wght@300;500&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width,initial-scale=1">基本
+    <link
+        href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@600&family=Zen+Kaku+Gothic+New:wght@300;500&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <body>
+    <div class="background"></div>
     <header>
-        <nav>
+        <nav id="g-nav">
             <ul class="main_menu">
                 <li class="global_link">
                     <a href="#About_link" class="global_anchor">About</a>
@@ -31,24 +35,34 @@
                     <a href="#Others_design_link" class="global_anchor">Others design</a>
                 </li>
             </ul>
+            <!-- ハンバーガーメニュー -->
+            <div class="hamburger">
+                <div class="hamburger-area">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
         </nav>
+        <div class="circle-bg"></div>
     </header>
     <div id="main">
         <!-- FV部分 -->
         <div id="About_link" class="fv_area">
             <div class="fv_picture">
-                <img src="img/fv_pic.png" alt="top画面の画像">
+                <img class="fv_img" src="../img/fv_pic.png" alt="top画面の画像">
                 <div class="fv_title">
                     <div class="fv_text_box">
                     </div>
-                    <h1 class="fv_top_text">Yuuka Mitori</h1>
-                    <p class="fv_sub_text">Portfolio</p>
+                    <div class="fv_text">
+                        <h1 class="fv_top_text">Yuuka Mitori</h1>
+                        <p class="fv_sub_text">Portfolio</p>
+                    </div>
                 </div>
                 <div class=triangle></div>
                 <div class="self_intro">
                     <p class="self_intro_text1">見鳥友香<br>1998年6月26日生まれ<br>岐阜県多治見市出身</p>
                     <p class="self_intro_text2">
-                        ”他にはない、新しいものを生み出す”<br>幼少期からアイディアを考えることが大好きでした<br>私の強みは「発想力」です<br>納得できるデザインが生み出せるまで、どれだけでも考えます
+                        ”他にはない、新しいものを生み出す”<br>幼少期からアイディアを考えることが大好きでした<br>私の強みは「発想力」です<br>納得できるデザインが生み出せるまで、<br
+                            class="only_SP">どれだけでも考えます
                     </p>
                 </div>
             </div>
@@ -148,12 +162,12 @@
         </div>
     </div>
     <!-- Topに戻る表記ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
-     <a href="#top">
+    <a href="#top">
         <div class="under_triangle"></div>
     </a>
     <footer>
         <p class="copy_light">©︎Yuuka Mitori-2023
     </footer>
+    <script src="../Top.js"></script>
 </body>
-
 </html>
