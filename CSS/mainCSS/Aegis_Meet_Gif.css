@@ -1,0 +1,10 @@
+.gif_vid{
+    width: 50% !important;
+}
+@media screen and (max-width: 400px) {
+    .gif_vid{
+        /* 優先させる表記↓ */
+        width: 85% !important;
+        margin: 0 auto !important;
+    }
+}
