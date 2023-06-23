@@ -6,92 +6,77 @@
 
 /* FV部分 */
 .fv_area {
+    position: relative;
     width: 100%;
     height: 100vh;
-    display: flex;
-    align-items: center;
-}
-
-.fv_picture {
-    position: relative;
-    display: flex;
-    width: 65%;
-    margin: 0 auto;
-    filter: drop-shadow(-2px 5px 2px rgba(0, 0, 0, 0.3));
-    transform: translateY(5%);
-    /* ↓はみ出た部分を隠すプロパティ→親要素につける */
-    overflow: hidden;
-
-}
-
-.fv_img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-}
-
-@media screen and (max-width: 400px) {
-    .fv_area {
-        height: 100vh;
-    }
-
-    .fv_picture {
-        width: 90%;
-        height: 80%;
-        margin: 10% auto;
-        transform: none;
-    }
-
-    /* 画像をトリミングしてコンテナーにフィットさせる↓ */
-    .fv_img {
-        width: 100vw;
-        max-width: none;
-        height: auto;
-        display: block;
-        object-fit: cover;
-    }
 }
 
 /* タイトル部分ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 .fv_title {
     position: absolute;
-    display: flex;
-    width: 45%;
-    height: 35%;
-    left: 7%;
-    top: 15%;
-    align-items: center;
 }
 
-.fv_text_box {
+.fv_circle {
+    position: relative;
+    /* 上下左右中央にする下三つ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 40vw;
+    left: -4%;
+    top: -8%;
+}
+
+.item_circle {
+    position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 254, 254, 0.3);
-    filter: blur(8px);
+    border-radius: 50%;
+    border: solid 1px #ffffff;
+    filter: drop-shadow(-2px 3px 2px rgba(0, 0, 0, 0.15));
 }
+
+.item_circle_img {
+    position: absolute;
+    width: 95%;
+    filter: drop-shadow(-2px 3px 2px rgba(0, 0, 0, 0.15));
+    /* 回転アニメーション */
+    animation: rotate_anime 20s linear infinite;
+}
+@keyframes rotate_anime {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 
 /* テキストを縦向きに並べる */
 .fv_text {
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 100%;
     position: absolute;
-
 }
 
 .fv_top_text {
-    font-size: 3rem;
+    font-size: 5rem;
+    line-height: 100%;
+    letter-spacing: 0.2rem;
     font-family: 'Red Hat Mono', monospace;
     text-align: center;
-    text-shadow: -2px 0px 0px #ffffff, -2px 3px 2px rgba(0, 0, 0, 0.3)
+    color: #99cf15;
+    text-shadow: -2px 3px 2px rgba(0, 0, 0, 0.15);
 }
 
 .fv_sub_text {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: 'Red Hat Mono', monospace;
     text-align: center;
-    text-shadow: -2px 0px 0px #ffffff, -2px 3px 2px rgba(0, 0, 0, 0.3);
+    color: #99cf15;
+    text-shadow: -2px 3px 2px rgba(0, 0, 0, 0.15);
+    margin-top: 10%;
 }
 
 @media screen and (max-width: 400px) {
@@ -107,34 +92,40 @@
     }
 }
 
-
-
-/* 自己紹介部分ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
-.triangle {
+.item_mini_reaf{
     position: absolute;
-    right: 0;
-    bottom: 0%;
-    border-style: solid;
-    border-width: 0 0 21rem 40rem;
-    border-color: transparent transparent rgb(126, 157, 143) transparent;
-    line-height: 0px;
-    opacity: 50%;
-    align-items: center;
-
+    width: 12vw;
+    bottom: 5%;
+    left: 5%;
 }
 
+.item_reaf {
+    position: absolute;
+    width: 55vw;
+    top:-5rem;
+    right: -2rem;
+    transform: rotate(-5deg);
+}
+
+/* 自己紹介部分ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 .self_intro {
     position: absolute;
-    text-align: right;
-    right: 0;
-    bottom: 0%;
-    margin: 2%;
-    color: #ffffff;
+    top: 19rem;
+    left: 32rem;
+}
 
+.self_intro_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.self_intro_text {
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .self_intro_text1 {
-    line-height: 200%;
+    font-weight: 500;
     margin-bottom: 5%;
 }
 
@@ -142,9 +133,9 @@
     line-height: 200%;
 }
 
-.only_SP {
+/* .only_SP {
     display: none;
-}
+} */
 
 @media screen and (max-width: 400px) {
     .triangle {
@@ -162,15 +153,16 @@
 }
 
 /* Worksの部分ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
-.works_area {
+/* .works_area {
     margin: 0 5vw 5vh 5vw;
-}
+} */
 
 .title_text {
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 500;
     color: #ffffff;
     text-shadow: -2px 3px 2px rgba(0, 0, 0, 0.15);
+    margin: 0 5vw;
 }
 
 .menu_title_under {
@@ -182,7 +174,7 @@
     height: 4px;
     background: currentColor;
     transform: translateY(-15px);
-    color: #ffffff;
+    color: #99cf15;
     filter: drop-shadow(-2px 3px 2px rgba(0, 0, 0, 0.15));
 }
 
@@ -203,14 +195,29 @@
 
 }
 
-.sub_title {
+.content_title{
+    position: relative;
+    width: 100%;
+    height: 8rem;
     margin: 8% 0;
+
+}
+
+.sub_title {
+    position: absolute;
     font-size: 8rem;
     font-family: 'Red Hat Mono', monospace;
-    color: rgba(255, 255, 255, 0.5);
     line-height: 5.5rem;
     /* フィルターブラー */
-    filter: blur(1px);
+    filter: blur(1.5px);
+}
+.item_contant{
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    right: 5%;
+    bottom: 0;
+    filter: blur(1.5px);
 }
 
 @media screen and (max-width: 400px) {
@@ -236,7 +243,7 @@
 .content_list {
     display: flex;
     justify-content: space-between;
-    margin: 5% 10%;
+    margin: 5vh 12vw;
 }
 
 .content_box {
@@ -244,7 +251,7 @@
     flex-direction: column;
     width: 26rem;
     height: 21.9rem;
-    
+
 }
 
 /* picture-list */
@@ -299,12 +306,11 @@
 .click_area {
     width: 100%;
     height: 14rem;
-    /* border: 0.5px solid #808080; */
     filter: drop-shadow(-2px 3px 2px rgba(0, 0, 0, 0.15));
-    border-radius: 10px;
     background-size: cover;
     background-repeat: no-repeat;
     transition-duration: .4s;
+
 }
 
 .click_area:hover {
@@ -329,5 +335,10 @@
 
 .project_field {
     margin: 2% 0 0 0;
-    color: #a9a9a9;
+}
+.item_content2{
+    width: 5vw;
+    height: 5vw;
+    margin: 0% 5%;
+    filter: blur(1.5px);
 }
