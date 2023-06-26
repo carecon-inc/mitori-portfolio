@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .top {
@@ -12,15 +13,29 @@
     flex-direction: column;
 }
 
-.h1 {
+.content_title{
+    position: relative;
+    width: 100%;
     margin: 8vh 5vw 5vh 5vw;
+    height: 8rem;
+}
+
+.h1{
+    position: absolute;
     font-size: 8rem;
     font-family: 'Red Hat Mono', monospace;
-    color: rgba(255, 255, 255, 0.5);
     line-height: 5.5rem;
     /* フィルターブラー */
-    filter: blur(1px);
+    filter: blur(1.5px);
     line-height: 100%;
+}
+.item_contant{
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    right: 10vw;
+    bottom: 0;
+    filter: blur(1.5px);
 }
 
 .Carecon_hp_top {
@@ -57,21 +72,24 @@
 .h2 {
     font-size: 2.5rem;
     font-weight: 500;
+    color: #99cf15;
+    margin-bottom: 0.5vh;
 }
 
 .field {
     font-size: 1.5rem;
-    color: #a9a9a9;
+    margin-bottom: 0.5vh;
 }
 
 .rink {
-    color: cornflowerblue;
+    color:#19bdfe;
     font-size: 1.5rem;
 }
 
 .explanation {
     font-size: 1.5rem;
     margin: 5vh 0;
+    font-weight: 500;
 }
 
 .point {
@@ -84,6 +102,7 @@
 .h3 {
     font-size: 2rem;
     font-weight: 500;
+    margin-bottom: 2vh;
 }
 
 @media screen and (max-width: 400px) {
@@ -94,6 +113,13 @@
     .point {
         margin: 0 5vw;
     }
+}
+
+.item_content2{
+    width: 5vw;
+    height: 5vw;
+    margin: 10% 5% 0 5%;
+    filter: blur(1.5px);
 }
 
 /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */

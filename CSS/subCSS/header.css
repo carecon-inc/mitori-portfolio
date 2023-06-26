@@ -21,26 +21,25 @@ body {
 .background {
     z-index: -999;
     position: fixed;
-    height: 100vh;
     width: 100%;
+    height: 100vh;
     background: #818181;
 }
 
-
-@media screen and (max-width: 400px) {
-    body {
-        font-size: 0.875rem;
-    }
-}
 
 /* header部分ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 header {
     position: fixed;
     bottom: 5%;
-    right: 2%;
+    right: 5%;
     z-index: 999;
     /* ↑固定する・画面の一番上に */
-    width: 12%;
+}
+
+#header_main{
+    display: flex;
+    height: 9rem;
+    align-items: center;
 }
 
 .main_menu {
@@ -48,39 +47,46 @@ header {
     flex-direction: column;
     list-style-type: none;
 }
+.header_item{
+    border-right: 5px solid #99cf15;
+    height: 100%;
+    margin: 0 1rem;
+    filter: drop-shadow(-2px 3px 2px rgba(0, 0, 0, 0.15));
+}
 
 .global_link {
-    /* text-align: center; */
     text-align: center;
     margin: 5% ;
 }
 
 .global_anchor {
     text-decoration: none;
-    /* color:rgb(88, 88, 88, 1); */
     color: #ffffff;
     font-weight: 500;
     text-shadow: -2px 3px 2px rgba(0, 0, 0, 0.15);
     white-space: nowrap;
+    /* 改行なし */
 }
 
 .global_anchor:hover {
     color: #99cf15;
 }
-.header_item{
-    border-right: 5px solid #99cf15;
-    margin: 5%;
-    filter: drop-shadow(-2px 3px 2px rgba(0, 0, 0, 0.15));
-}
 
 @media screen and (max-width: 400px) {
+
+    header{
+        bottom:3%
+    }
+
+    .header_item{
+        display: none;
+    }
 
     /*ボタン外側*/
     .hamburger {
         z-index: 999;
-        position: relative;
+        /* position: absolute; */
         /*ボタン内側の基点となるためrelativeを指定*/
-        margin: 0 0 0 auto;
         /* 要素丸ごと右よせにする */
         cursor: pointer;
         width: 60px;
@@ -154,10 +160,9 @@ header {
     }
 
     /* ボタンを押した後にでてくるメニュー */
-    #g-nav.panelactive {
+    /* #g-nav.panelactive {
         top: 0;
-        height: 100vh;
-    }
+    } */
 
     .circle-bg {
         position: fixed;
@@ -166,13 +171,13 @@ header {
         width: 18px;
         height: 18px;
         border-radius: 50%;
-        background: rgb(106, 132, 120);
-        opacity: 95%;
+        background: #99cf15;
+        opacity: 70%;
         /*丸のスタート位置と形状*/
         transform: scale(0);
         /*scaleをはじめは0に*/
         left: 120vw;
-        top: -15vw;
+        bottom: -15vw;
         transition: all .6s;
         /*0.6秒かけてアニメーション*/
     }
@@ -195,7 +200,7 @@ header {
         display: flex;
         flex-flow: column;
         z-index: 999;
-        top: 5%;
+        bottom: 5%;
     }
 
     .global_anchor {
@@ -213,19 +218,19 @@ header {
     }
 
     .global_link:nth-of-type(1) {
-        transform: translateX(2rem);
+        /* transform: translateX(2rem); */
     }
 
     .global_link:nth-of-type(2) {
-        transform: translateX(6rem);
+        /* transform: translateX(6rem); */
     }
 
     .global_link:nth-of-type(3) {
-        transform: translateX(10rem);
+        /* transform: translateX(10rem); */
     }
 
     .global_link:nth-of-type(4) {
-        transform: translateX(14rem);
+        /* transform: translateX(14rem); */
     }
 
     #g-nav.panelactive ul {
