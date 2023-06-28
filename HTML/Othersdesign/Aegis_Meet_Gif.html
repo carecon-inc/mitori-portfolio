@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <title>見鳥友香のポートフォリオ_Careconサイト画面</title>
@@ -17,34 +18,31 @@
         rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
+
 <body>
     <div class="background"></div>
-    <header>
+    <header id="header">
+        <div class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
         <nav id="g-nav">
-            <div class="header_item">
-                <ul class="main_menu">
-                    <li class="global_link">
-                        <a href="../Top/Top.html#About_link" class="global_anchor">About</a>
-                    </li>
-                    <li class="global_link">
-                        <!-- ページ遷移のページ内リンク -->
-                        <a href="../Top/Top.html#Web_design_link" class="global_anchor">Web design</a>
-                    </li>
-                    <li class="global_link">
-                        <a href="../Top/Top.html#Graphic_design_link " class="global_anchor">Graphic design</a>
-                    </li>
-                    <li class="global_link">
-                        <a href="../Top/Top.html#Others_design_link" class="global_anchor">Others design</a>
-                    </li>
-                </ul>
-                </div>
-            <!-- ハンバーガーメニュー -->
-            <div class="hamburger">
-                <div class="hamburger-area">
-                    <span></span><span></span><span></span>
-                </div>
-            </div>
+            <ul class="main_menu">
+                <li class="global_link">
+                    <a href="../Top/Top.html#About_link" class="global_anchor">About</a>
+                </li>
+                <li class="global_link">
+                    <!-- ページ遷移のページ内リンク -->
+                    <a href="../Top/Top.html#Web_design_link" class="global_anchor">Web design</a>
+                </li>
+                <li class="global_link">
+                    <a href="../Top/Top.html#Graphic_design_link " class="global_anchor">Graphic design</a>
+                </li>
+                <li class="global_link">
+                    <a href="../Top/Top.html#Others_design_link" class="global_anchor">Others design</a>
+                </li>
+            </ul>
         </nav>
+        <div class="header_item"></div>
         <div class="circle-bg"></div>
     </header>
     <div id="main">
@@ -59,14 +57,14 @@
             <h2 class="h2">Aegis Meetup</h2>
             <p class="field">GIF動画制作</p>
             <a class="rink" href="https://aegis-meetup.jp/" target="_blank">https://aegis-meetup.jp/</a>
-            <p class="explanation">エンジニア同士の交流を目的としたMeet Upイベントサイトのファーストビューの部分に使用する<br>
+            <p class="explanation">エンジニア同士の交流を目的としたMeet Upイベントサイトのファーストビューの部分に使用する
                 GIF動画の制作をさせていただきました。</p>
         </div>
         <div class="point">
             <h3 class="h3">&nbsp;-&nbsp;Point&nbsp;-&nbsp;</h2>
-            <p class="explanation2">Adobe frescoを用いて写真をイラスト化し、イラストから写真に移り変わるGIF動画を作成しました。<br>
-                イラストには鮮やかな色を使用する事でサイトとのマッチ度を上げ、Gif動画で動きをプラスする事で、イベントサイトらしい賑やかさのある<br>
-                ファーストビューになりました。</p>
+                <p class="explanation2">Adobe frescoを用いて写真をイラスト化し、イラストから写真に移り変わるGIF動画を作成しました。<br>
+                    イラストには鮮やかな色を使用する事でサイトとのマッチ度を上げ、Gif動画で動きをプラスする事で、イベントサイトらしい賑やかさのある
+                    ファーストビューになりました。</p>
         </div>
         <img class="item_content2" src="../../img/top_fv_img/item_content2.png">
     </div>
@@ -74,9 +72,11 @@
     <a href="#top">
         <div class="under_triangle"></div>
     </a>
+
     <footer>
         <p class="copy_light">©︎Yuuka Mitori-2023
     </footer>
-    <script src="../Top.js"></script>
+    <script src="../../Top.js"></script>
 </body>
+
 </html>

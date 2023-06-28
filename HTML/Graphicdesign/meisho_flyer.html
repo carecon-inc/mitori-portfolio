@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <title>見鳥友香のポートフォリオ_Careconサイト画面</title>
@@ -17,11 +18,14 @@
         rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
+
 <body>
     <div class="background"></div>
-    <header>
+    <header id="header">
+        <div class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
         <nav id="g-nav">
-            <div class="header_item">
             <ul class="main_menu">
                 <li class="global_link">
                     <a href="../Top/Top.html#About_link" class="global_anchor">About</a>
@@ -37,14 +41,8 @@
                     <a href="../Top/Top.html#Others_design_link" class="global_anchor">Others design</a>
                 </li>
             </ul>
-            </div>
-            <!-- ハンバーガーメニュー -->
-            <div class="hamburger">
-                <div class="hamburger-area">
-                    <span></span><span></span><span></span>
-                </div>
-            </div>
         </nav>
+        <div class="header_item"></div>
         <div class="circle-bg"></div>
     </header>
     <div id="main">
@@ -53,7 +51,7 @@
                 <h1 class="h1">Graphic design</h1>
                 <img class="item_contant" src="../../img/top_fv_img/item_content.png">
             </div>
-            <img class="Carecon_hp_top" src="../../img/sub_fv_img/meisho_flyer_Top.png"  alt="hpイメージ画像">
+            <img class="Carecon_hp_top" src="../../img/sub_fv_img/meisho_flyer_Top.png" alt="hpイメージ画像">
         </div>
         <div class="detail">
             <h2 class="h2">株式会社明彰</h2>
@@ -63,8 +61,8 @@
         </div>
         <div class="point">
             <h3 class="h3">&nbsp;-&nbsp;Point&nbsp;-&nbsp;</h2>
-            <p class="explanation2">メインカラーである青をベースに、明度や彩度に変化をつけたり、配置で差をつける事で、同じ内容でもデザインの雰囲気を変え、<br>
-                様々なターゲット層に打ち出せるチラシになるように制作しました。</p>
+                <p class="explanation2">メインカラーである青をベースに、明度や彩度に変化をつけたり、配置で差をつける事で、同じ内容でもデザインの雰囲気を変え、
+                    様々なターゲット層に打ち出せるチラシになるように制作しました。</p>
         </div>
         <div class="achievement">
             <div class="content_list">
@@ -94,9 +92,11 @@
     <a href="#top">
         <div class="under_triangle"></div>
     </a>
+
     <footer>
         <p class="copy_light">©︎Yuuka Mitori-2023
     </footer>
-    <script src="../Top.js"></script>
+    <script src="../../Top.js"></script>
 </body>
+
 </html>

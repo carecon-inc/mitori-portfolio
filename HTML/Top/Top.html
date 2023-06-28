@@ -20,34 +20,31 @@
 
 <body>
     <div class="background"></div>
-    <header>
+    <header id="header">
+        <div class="hamburger">
+            <div class="edge"></div>
+            <span></span><span></span><span></span>
+        </div>
         <nav id="g-nav">
-            <div id="header_main">
-                <ul class="main_menu">
-                    <li class="global_link">
-                        <a href="#About_link" class="global_anchor">About</a>
-                    </li>
-                    <li class="global_link">
-                        <a href="#Web_design_link" class="global_anchor">Web design</a>
-                    </li>
-                    <li class="global_link">
-                        <a href="#Graphic_design_link " class="global_anchor">Graphic design</a>
-                    </li>
-                    <li class="global_link">
-                        <a href="#Others_design_link" class="global_anchor">Others design</a>
-                    </li>
-                </ul>
-                <div class="header_item"></div>
-            </div>
-            <!-- ハンバーガーメニュー -->
-            <div class="hamburger">
-                <div class="hamburger-area">
-                    <span></span><span></span><span></span>
-                </div>
-            </div>
+            <ul>
+                <li class="global_link">
+                    <a href="#About_link" class="global_anchor">About</a>
+                </li>
+                <li class="global_link">
+                    <a href="#Web_design_link" class="global_anchor">Web design</a>
+                </li>
+                <li class="global_link">
+                    <a href="#Graphic_design_link " class="global_anchor">Graphic design</a>
+                </li>
+                <li class="global_link">
+                    <a href="#Others_design_link" class="global_anchor">Others design</a>
+                </li>
+            </ul>
         </nav>
+        <div class="header_item"></div>
         <div class="circle-bg"></div>
     </header>
+
     <div id="main">
         <!-- FV部分 -->
         <div id="About_link" class="fv_area">
@@ -64,7 +61,7 @@
             <img class="item_reaf" src="../../img/top_fv_img/item_reaf.png">
             <div class="self_intro">
                 <div class="self_intro_text">
-                    <p class="self_intro_text1">見鳥友香&nbsp;-&nbsp;1998年6月26日生まれ&nbsp;-&nbsp;
+                    <p class="self_intro_text1">見鳥友香<br class="only_SP">&nbsp;-&nbsp;1998年6月26日生まれ&nbsp;-&nbsp;
                     <p class="self_intro_text2">
                         ”他にはない、新しいものを生み出す”<br>
                         幼少期からアイディアを考えることが大好きでした<br>
@@ -208,10 +205,12 @@
             </section>
         </div>
     </div>
+    
     <!-- Topに戻る表記ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
     <a href="#top">
         <div class="under_triangle"></div>
     </a>
+
     <footer>
         <p class="copy_light">©︎Yuuka Mitori-2023</p>
     </footer>

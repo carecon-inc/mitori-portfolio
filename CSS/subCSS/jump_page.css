@@ -1,125 +1,140 @@
 /* top画面 */
 #main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     overflow: hidden;
 }
+
 
 .top {
     width: 100%;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
-.content_title{
+.content_title {
     position: relative;
     width: 100%;
-    margin: 8vh 5vw 5vh 5vw;
-    height: 8rem;
+    padding: 2rem 3rem;
+    margin-bottom: 2rem;
+    height: 10rem;
+    filter: blur(0.05rem);
 }
 
-.h1{
+.h1 {
     position: absolute;
-    font-size: 8rem;
+    font-size: 7rem;
     font-family: 'Red Hat Mono', monospace;
     line-height: 5.5rem;
-    /* フィルターブラー */
-    filter: blur(1.5px);
     line-height: 100%;
 }
-.item_contant{
+
+.item_contant {
     position: absolute;
-    width: 5vw;
-    height: 5vw;
-    right: 10vw;
-    bottom: 0;
-    filter: blur(1.5px);
+    width: 5rem;
+    height: 5rem;
+    right: 2rem;
+    top: 3rem;
 }
 
 .Carecon_hp_top {
     width: 70%;
-    top: 20vh;
-    margin: 0 auto;
+    top: 30rem;
+    margin: auto;
+    display: block;
 }
 
 @media screen and (max-width: 400px) {
+
+
     .top {
         width: 100%;
-        height: 70vh;
+        height: 60vh;
+    }
+
+    .content_title {
+        position: relative;
+        width: 100%;
+        padding: 1rem 1rem;
+        margin-bottom: 5rem;
+        height: 10rem;
+        filter: blur(0.09375rem);
+
     }
 
     .h1 {
-        margin: 6vh 5vw;
-        font-size: 5rem;
+        position: absolute;
+        font-size: 4.875rem;
+        font-family: 'Red Hat Mono', monospace;
+        line-height: 5.5rem;
+        line-height: 100%;
+    }
+
+    .item_contant {
+        position: absolute;
+        width: 4rem;
+        height: 4rem;
+        right: 1rem;
+        bottom: 0;
+        top: 1rem;
     }
 
     .Carecon_hp_top {
         width: 100%;
-        margin: 0;
     }
 }
 
 /* 詳細画面 */
 .detail {
-    margin: 5vh 10vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    margin: 0 8rem;
+    align-items: center;
 }
 
 .h2 {
     font-size: 2.5rem;
     font-weight: 500;
     color: #99cf15;
-    margin-bottom: 0.5vh;
+    margin-bottom: 0.2rem;
 }
 
 .field {
     font-size: 1.5rem;
-    margin-bottom: 0.5vh;
+    margin-bottom: 0.2rem;
 }
 
 .rink {
-    color:#19bdfe;
+    color: #19bdfe;
     font-size: 1.5rem;
 }
 
 .explanation {
     font-size: 1.5rem;
-    margin: 5vh 0;
+    margin-top: 3rem;
     font-weight: 500;
 }
 
 .point {
-    margin: 0 10vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    margin: 3rem 8rem;
 }
 
 .h3 {
     font-size: 2rem;
     font-weight: 500;
-    margin-bottom: 2vh;
+    margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 400px) {
     .detail {
-        margin: 0 5vw;
+        margin: 0 1rem;
     }
 
     .point {
-        margin: 0 5vw;
+        margin: 5rem 1rem 0;
     }
 }
 
-.item_content2{
-    width: 5vw;
-    height: 5vw;
-    margin: 10% 5% 0 5%;
-    filter: blur(1.5px);
+.item_content2 {
+    width: 5rem;
+    height: 5rem;
+    margin: 5rem 2rem 0;
+    filter: blur(0.09375rem);
 }
 
 /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */

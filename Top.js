@@ -1,9 +1,9 @@
-var hamburgerElements = document.querySelectorAll(".hamburger");
-hamburgerElements.forEach(function (element) {
-    element.addEventListener("click", function () {
-        this.classList.toggle("open");
-    });
-});
+// var hamburgerElements = document.querySelectorAll(".hamburger");
+// hamburgerElements.forEach(function (element) {
+//     element.addEventListener("click", function () {
+//         this.classList.toggle("open");
+//     });
+// });
 
 document.querySelector(".hamburger").addEventListener('click', function () {
     this.classList.toggle('active');
@@ -19,3 +19,4 @@ document.querySelectorAll("#g-nav a").forEach(function (link) {
         document.querySelector(".circle-bg").classList.remove('circleactive');
     });
 });
+

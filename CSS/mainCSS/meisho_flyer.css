@@ -1,18 +1,21 @@
-.content_list{
+.content_list {
     display: flex;
-        display: flex;
+    display: flex;
     justify-content: space-between;
     margin: 10% 10% 0 10%;
 }
+
 .content_box {
     display: flex;
     flex-direction: column;
     width: 28rem;
     height: 21.9rem;
 }
-.flyer_img{
+
+.flyer_img {
     margin: 5% 0;
 }
+
 @media screen and (max-width: 400px) {
     .content_list {
         flex-direction: column;
