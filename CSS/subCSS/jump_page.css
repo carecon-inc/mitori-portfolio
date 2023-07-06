@@ -111,7 +111,7 @@
 }
 
 .point {
-    margin: 3rem 8rem;
+    margin: 3rem 8rem 5rem;
 }
 
 .h3 {
@@ -126,15 +126,24 @@
     }
 
     .point {
-        margin: 5rem 1rem 0;
+        margin: 5rem 1rem ;
     }
 }
 
 .item_content2 {
     width: 5rem;
     height: 5rem;
-    margin: 5rem 2rem 0;
+    margin-left: 2rem;
     filter: blur(0.09375rem);
 }
+
+@media screen and (max-width: 400px) {
+    .item_content2{
+            width: 4rem;
+            height: 4rem;
+            margin-left: 1rem;
+        }
+}
+
 
 /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */

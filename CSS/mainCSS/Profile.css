@@ -1,0 +1,23 @@
+.Profile{
+  width: 50%;
+  margin: 3rem auto ;
+  overflow: hidden;
+}
+.profile_title{
+    color: #99cf15;
+    font-weight: 500;
+}
+p{
+    margin: 0.5rem 0;
+    white-space: nowrap;
+}
+.profile_text{
+    margin-left: 1rem;
+}
+
+@media screen and (max-width: 400px) {
+    .Profile{
+        width: 90%;
+    }
+    
+}
