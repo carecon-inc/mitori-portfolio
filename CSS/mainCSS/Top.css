@@ -47,13 +47,13 @@
     height: 100%;
     border-radius: 50%;
     border: solid 1px #ffffff;
-    filter: drop-shadow(-0.125rem 0.1875rem 0.125rem rgba(0, 0, 0, 0.15));
+    filter: drop-shadow(-0.5rem 0.1875rem 0.1rem rgba(0, 0, 0, 0.2));
 }
 
 .item_circle_img {
     position: absolute;
     width: 95%;
-    filter: drop-shadow(-0.125rem 0.1875rem 0.125rem rgba(0, 0, 0, 0.15));
+    filter: drop-shadow(-0.5rem 0.1875rem 0.1rem rgba(0, 0, 0, 0.2));
     /* 回転アニメーション */
     animation: rotate_anime 20s linear infinite;
 }
@@ -78,7 +78,7 @@
     font-family: 'Red Hat Mono', monospace;
     text-align: center;
     color: #99cf15;
-    text-shadow: -0.125rem 0.1875rem 0.125rem rgba(0, 0, 0, 0.15);
+    text-shadow: -0.4rem 0.5rem 0.1rem rgba(0, 0, 0, 0.2);
 }
 
 .fv_sub_text {
@@ -86,7 +86,7 @@
     font-family: 'Red Hat Mono', monospace;
     text-align: center;
     color: #99cf15;
-    text-shadow: -0.125rem 0.1875rem 0.125rem rgba(0, 0, 0, 0.15);
+    text-shadow: -0.4rem 0.5rem 0.1rem rgba(0, 0, 0, 0.2);
     margin-top: 2rem;
 }
 
@@ -99,6 +99,8 @@
     animation-duration:15s;
     animation-fill-mode:forwards;
     opacity:0;
+    filter: drop-shadow(-0.5rem 1rem 0.1rem rgba(0, 0, 0, 0.2));
+
 }
 
     @keyframes fadeInAnime{
@@ -117,9 +119,11 @@
     top:-4rem;
     right: -1rem;
     transform: rotate(-1deg);
+    filter: drop-shadow(-0.5rem 1rem 0.1rem rgba(0, 0, 0, 0.2));
+
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
     /* .fv_title {
         width: 70rem;
         height: 18rem;
@@ -148,7 +152,7 @@
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
     .item_mini_reaf{
         position: absolute;
         width: 6rem;
@@ -169,7 +173,7 @@
 /* 自己紹介部分ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 .self_intro {
     position: absolute;
-    bottom: 6rem;
+    bottom: 4.5rem;
     left: 30rem;
 }
 
@@ -180,19 +184,22 @@
 
 
 .self_intro_text1 {
-    font-weight: 500;
     margin-bottom: 2rem;
+    text-shadow: -0.4rem 0.5rem 0.1rem rgba(0, 0, 0, 0.2);
+
 }
 
 .self_intro_text2 {
     line-height: 2em;
+    text-shadow: -0.4rem 0.5rem 0.1rem rgba(0, 0, 0, 0.2);
+
 }
 
 .only_SP {
     display: none;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
     .triangle {
         border-width: 0 0 23rem 37rem;
 
@@ -233,51 +240,44 @@ section{
     margin-bottom: 10rem;
 }
 
+.menu_title{
+    width: 20%;
+}
+
 .title_text {
     font-size: 5rem;
     font-weight: 500;
     color: #ffffff;
-    text-shadow: -0.125rem 0.1875rem 0.125rem rgba(0, 0, 0, 0.15);
+    text-shadow: -0.4rem 0.5rem 0.1rem rgba(0, 0, 0, 0.2);
     margin: 0 5rem;
 }
 
 .menu_title_under {
-    display: inline-block;
-    vertical-align: middle;
-    line-height: 1rem;
     position: relative;
-    width: 30rem;
-    height: 0.25rem;
-    background: currentColor;
-    transform: translateY(-0.9375rem);
-    color: #99cf15;
+    border-bottom: dotted 5px #99cf15;
     filter: drop-shadow(-0.125rem 0.1875rem 0.125rem rgba(0, 0, 0, 0.15));
 }
 
-/* 擬似的要素 */
-.menu_title_under::before {
-    content: '';
-    width: 1.25rem;
-    height: 1.25rem;
-    border: 0.25rem solid currentColor;
-    border-left: 0;
-    border-bottom: 0;
-    transform: rotate(45deg);
-    transform-origin: top right;
-    position: absolute;
-    top: 50%;
-    right: -1%;
-    box-sizing: border-box;
 
+
+.menu_title_under {
+    animation: arrowlong01 2.5s ease infinite;
 }
+
+@keyframes arrowlong01{
+    0%{width:0;opacity:0}
+    20%{width:0;opacity:1}
+    80%{width:25rem;opacity:1}
+    100%{width:25rem;opacity:0}
+}
+
 
 .content_title{
     position: relative;
     width: 100%;
     height: 8rem;
     margin: 8rem 0;
-    filter: blur(0.05rem);
-
+    filter: drop-shadow(-0.125rem 0.1875rem 0.125rem rgba(0, 0, 0, 0.15));
 }
 
 .sub_title {
@@ -285,18 +285,23 @@ section{
     font-size: 8rem;
     font-family: 'Red Hat Mono', monospace;
     line-height: 5.5rem;
-    /* フィルターブラー */
+    color: transparent;
+    -webkit-text-stroke: 2px white;
 }
 
 .item_contant{
     position: absolute;
+    right: 3rem;
     width: 5rem;
     height: 5rem;
-    right: 2rem;
-    bottom: 0;
+    border-top : solid 0.25rem #99cf15 ;
+    border-right : solid 0.25rem #99cf15 ;
+    transform: translateY(70%);
+
 }
 
-@media screen and (max-width: 400px) {
+
+@media screen and (max-width: 700px) {
     section{
         margin-bottom: 5rem;
     }
@@ -313,6 +318,8 @@ section{
     .sub_title {
         font-size: 5rem;
         line-height: 4.5rem;
+        -webkit-text-stroke: 1px white;
+
     }
     .content_title{
         margin: 3rem 0 6rem 0;
@@ -322,7 +329,8 @@ section{
         width: 3rem;
         height: 3rem;
         right: 0.5rem;
-        bottom: 0;
+        border-top : solid 0.2rem #99cf15 ;
+        border-right : solid 0.2rem #99cf15 ;  
     }
     
 }
@@ -341,6 +349,10 @@ section{
     width: 26rem;
     height: 22rem;
 
+}
+
+.content_box:hover {
+    color: #99cf15;
 }
 
 /* picture-list */
@@ -407,7 +419,7 @@ section{
     transform: scale(1.1);
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
     .content_list {
         flex-direction: column;
         justify-content: start;
@@ -434,15 +446,19 @@ section{
 .item_content2{
     width: 5rem;
     height: 5rem;
-    margin: 0% 2rem;
-    filter: blur(0.09375rem);
+    margin-left: 3rem;
+    border-bottom : solid 0.25rem #99cf15 ;
+    border-left : solid 0.25rem #99cf15 ;
+    filter: drop-shadow(-0.125rem 0.1875rem 0.125rem rgba(0, 0, 0, 0.15));
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
     .item_content2{
     width: 3rem;
     height: 3rem;
     margin: 0 0 0 0.5rem;
-    filter: blur(0.09375rem);
+    border-bottom : solid 0.2rem #99cf15 ;
+    border-left : solid 0.2rem #99cf15 ;
+
 }
 }

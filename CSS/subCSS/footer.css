@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 .under_triangle {
     position: sticky;
     border-bottom: 2.5rem solid #99cf15;

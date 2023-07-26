@@ -15,7 +15,8 @@
     padding: 2rem 3rem;
     margin-bottom: 2rem;
     height: 10rem;
-    filter: blur(0.05rem);
+    filter: drop-shadow(-0.125rem 0.1875rem 0.125rem rgba(0, 0, 0, 0.15));
+
 }
 
 .h1 {
@@ -32,6 +33,9 @@
     height: 5rem;
     right: 2rem;
     top: 3rem;
+    border-top : solid 0.25rem #99cf15 ;
+    border-right : solid 0.25rem #99cf15 ;
+
 }
 
 .Carecon_hp_top {
@@ -41,8 +45,7 @@
     display: block;
 }
 
-@media screen and (max-width: 400px) {
-
+@media screen and (max-width: 700px) {
 
     .top {
         width: 100%;
@@ -55,7 +58,6 @@
         padding: 1rem 1rem;
         margin-bottom: 5rem;
         height: 10rem;
-        filter: blur(0.09375rem);
 
     }
 
@@ -90,8 +92,8 @@
 .h2 {
     font-size: 2.5rem;
     font-weight: 500;
-    color: #99cf15;
     margin-bottom: 0.2rem;
+    color: #99cf15;
 }
 
 .field {
@@ -100,8 +102,12 @@
 }
 
 .rink {
-    color: #19bdfe;
+    border-bottom: solid 1px white;
     font-size: 1.5rem;
+}
+
+.rink:hover{
+    opacity: 70%;
 }
 
 .explanation {
@@ -110,8 +116,13 @@
     font-weight: 500;
 }
 
+.line{
+    margin: 2rem 8rem;
+    border-bottom: dotted 3px #99cf15;
+}
+
 .point {
-    margin: 3rem 8rem 5rem;
+    margin: 2rem 8rem 5rem;
 }
 
 .h3 {
@@ -120,7 +131,18 @@
     margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 400px) {
+.data{
+    border: dotted 2px white;
+    margin: 3rem 8rem;
+}
+
+.img{
+    display: block;
+    width: 100%;
+    padding: 2rem;
+}
+
+@media screen and (max-width: 700px) {
     .detail {
         margin: 0 1rem;
     }
@@ -128,20 +150,31 @@
     .point {
         margin: 5rem 1rem ;
     }
+
+    .data{
+        margin: 2rem 1rem;
+    }
+    .img{
+        padding: 1rem;
+    }
 }
 
-.item_content2 {
+
+.item_contant2{
     width: 5rem;
     height: 5rem;
     margin-left: 2rem;
-    filter: blur(0.09375rem);
+    border-bottom : solid 0.25rem #99cf15 ;
+    border-left : solid 0.25rem #99cf15 ;
+    filter: drop-shadow(-0.125rem 0.1875rem 0.125rem rgba(0, 0, 0, 0.15));
 }
 
-@media screen and (max-width: 400px) {
-    .item_content2{
+@media screen and (max-width: 700px) {
+    .item_contant2{
             width: 4rem;
             height: 4rem;
             margin-left: 1rem;
+
         }
 }
 
