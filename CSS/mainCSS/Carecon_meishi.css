@@ -8,3 +8,9 @@
     width: 50%;
     padding: 2rem;
 }
+
+@media screen and (max-width: 700px) {
+    .meishi_img{
+        padding: 1rem;
+    }
+}

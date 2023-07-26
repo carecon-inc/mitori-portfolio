@@ -9,4 +9,7 @@
         justify-content: start;
         align-items: center;
     }
+    .flyer_img{
+        padding: 1.5rem;
+    }
 }

@@ -8,7 +8,7 @@ html{
     border-right: 1.5rem solid transparent;
     width: 0;
     margin: 4rem auto;
-    filter: drop-shadow(-0.125rem 0.1875rem 0.125rem rgba(0, 0, 0, 0.15));
+    filter: drop-shadow(-0.5rem 1rem 0.1rem rgba(0, 0, 0, 0.2));
 }
 
 .under_triangle:hover {
